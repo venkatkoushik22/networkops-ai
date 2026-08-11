@@ -1,4 +1,5 @@
-﻿import html
+import html
+import os
 from datetime import datetime
 from textwrap import dedent
 
@@ -9,6 +10,15 @@ import streamlit as st
 
 
 API_BASE = "http://127.0.0.1:8000"
+
+PUBLIC_DEMO = os.getenv(
+    "NETWORKOPS_PUBLIC_DEMO",
+    "0",
+).lower() in {
+    "1",
+    "true",
+    "yes",
+}
 
 
 st.set_page_config(
@@ -1275,9 +1285,16 @@ if st.session_state.get("active_site") != selected_site:
 
 recipient_email = st.text_input(
     "OPS SUMMARY RECIPIENT",
-    placeholder="engineer@example.com",
+    placeholder="Available in authenticated local deployment",
     key="ops_summary_recipient",
+    disabled=PUBLIC_DEMO,
 )
+
+if PUBLIC_DEMO:
+    st.caption(
+        "PUBLIC DEMO / Google Workspace write actions are "
+        "disabled to protect private OAuth credentials."
+    )
 
 action_1, action_2, action_3, action_4 = st.columns(4)
 
@@ -1295,6 +1312,7 @@ with action_2:
     create_report = st.button(
         "CREATE INCIDENT REPORT",
         use_container_width=True,
+        disabled=PUBLIC_DEMO,
     )
 
 
@@ -1303,6 +1321,7 @@ with action_3:
     log_to_sheets = st.button(
         "LOG TO GOOGLE SHEETS",
         use_container_width=True,
+        disabled=PUBLIC_DEMO,
     )
 
 
@@ -1311,6 +1330,7 @@ with action_4:
     send_summary = st.button(
         "SEND OPS SUMMARY",
         use_container_width=True,
+        disabled=PUBLIC_DEMO,
     )
 
 

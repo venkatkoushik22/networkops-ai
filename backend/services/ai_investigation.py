@@ -1,4 +1,4 @@
-﻿import json
+import json
 import os
 from datetime import timedelta
 
@@ -316,6 +316,21 @@ def investigate_site(site_id):
     context = build_site_context(
         site_id
     )
+
+    public_demo = os.getenv(
+        "NETWORKOPS_PUBLIC_DEMO",
+        "0",
+    ).lower() in {
+        "1",
+        "true",
+        "yes",
+    }
+
+    if public_demo:
+        return local_fallback(
+            context,
+            "Public demo mode",
+        )
 
     prompt = f"""
 You are NetworkOps AI, a telecom network operations
