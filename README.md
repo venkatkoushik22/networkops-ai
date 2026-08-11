@@ -57,6 +57,9 @@ flowchart TD
     K --> N[Incident Register]
     L --> O[Engineering Report]
     M --> P[Operations Summary]
+```
+
+---
 
 ## Synthetic Telecom Dataset
 
