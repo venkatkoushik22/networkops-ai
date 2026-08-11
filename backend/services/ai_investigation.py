@@ -290,9 +290,9 @@ def local_fallback(context, error_message):
         ),
 
         "executive_summary": (
-            "Local telemetry analysis was used because "
-            "Vertex AI was unavailable."
-        ),
+    		"Public demo mode uses the local telemetry analysis engine; "
+    		"Vertex AI integration is available in the authenticated deployment."
+	),
 
         "evidence": evidence,
 
