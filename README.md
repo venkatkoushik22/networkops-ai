@@ -1,4 +1,18 @@
+
 # NetworkOps AI
+
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Vertex AI](https://img.shields.io/badge/Vertex_AI-Gemini-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![BigQuery](https://img.shields.io/badge/BigQuery-Telemetry-669DF6?style=flat-square&logo=googlebigquery&logoColor=white)
+![Google Workspace](https://img.shields.io/badge/Google_Workspace-Automation-34A853?style=flat-square&logo=google&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Telecom](https://img.shields.io/badge/Telecom-Network_Operations-7B61FF?style=flat-square)
+
+**Live Demo:** [Open NetworkOps AI](https://networkops-ai-firrem2deynt4s9upg6mqh.streamlit.app/)
+
+**Hugging Face:** [View Project Showcase](https://huggingface.co/spaces/Venkatkoushik22/networkops-ai)
 
 AI-assisted telecom network operations platform built with FastAPI, Streamlit, Google Cloud, Vertex AI, BigQuery, and Google Workspace.
 
