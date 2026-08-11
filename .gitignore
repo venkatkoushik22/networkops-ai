@@ -1,0 +1,44 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Google OAuth / local secrets
+secrets/
+token*.json
+credentials*.json
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Streamlit local config
+.streamlit/secrets.toml
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary project patch scripts
+patch_*.py
+repair_*.py
+test_vertex.py
+
+# Local backup files
+*_backup.py
+*_before_*.py
+
+# Generated model artifacts
+*.joblib

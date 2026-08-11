@@ -1,0 +1,15 @@
+﻿fastapi
+uvicorn
+pandas
+numpy
+streamlit
+requests
+plotly
+python-dotenv
+google-genai
+google-cloud-bigquery
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-auth-oauthlib
+pyarrow
