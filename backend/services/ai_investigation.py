@@ -1,4 +1,4 @@
-import json
+﻿import json
 import os
 from datetime import timedelta
 
@@ -427,3 +427,4 @@ TELEMETRY DATA:
             context,
             str(exc),
         )
+
